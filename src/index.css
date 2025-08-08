@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#heading{
+  color:brown;
+  background-color: burlywood;
+  width: fit-content;
+}
+
+#myButton{
+  background-color:rgb(29, 164, 67);
+  padding-inline: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-size: larger;
+}
+#myButton:hover{
+  background-color: rgb(223, 27, 27);
+  color: white;
+}

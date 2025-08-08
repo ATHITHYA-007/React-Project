@@ -1,38 +1,268 @@
-.App {
+    /* _____________CSS of Login____________ */
+    .first h1 {
+    text-align: center;
+    }
+
+    .first {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgb(128, 130, 131);
+      width: 300px ;
+      text-align: left;
+      margin: auto;
+    }
+
+    .first label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #555;
+    }
+
+    .first input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .first button {
+      width: 100%;
+      padding: 10px;
+      background: #4CAF50;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .first button:hover {
+      background: #45a049;
+    }
+
+/* _______________________CSS of Register______________________ */
+
+ .Reg2 {
+  background: #fafafa;
+  padding: 20px;
+  width: 400px;
+  margin: 50px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgb(128, 130, 131);
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+}
+
+.Reg2 h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.Reg2 label {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.Reg2 input {
+  width: 40%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.gender-row {
+  width: 35%;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.form-section {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.checkbox-sec{
+  width: 50px;
+  display:block;
+}
+
+
+.Reg2 button {
+  margin-top: 15px;
+  padding: 10px;
+  background: #055398;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.Reg2 button:hover {
+  background: #0f5fd8;
+}
+
+/* ____________________________CSS of JobApplicationForm__________________________*/
+
+    .job-form {
+      max-width: 500px;
+      margin: auto;
+      background: #fafafa;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgb(128, 130, 131);
+    }
+
+    .job-form h2 {
+      text-align: center;
+    }
+
+    .job-form label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    .job-form input,
+    .job-form textarea,
+    .job-form button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    .job-form button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+
+    .job-form button:hover {
+      background-color: #0056b3;
+    }
+
+    .contactUs h2{
+      text-align: center;
+    }
+    .contactUs{
+      background: #fff;
+      padding: 20px;
+      border-radius: 20px;
+      border-style: solid ;
+      /* box-shadow: 0 4px 12px rgb(47, 65, 73); */
+      width: 300px ;
+      text-align: left;
+      margin: auto;
+    }
+
+    .contactUs label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #000000;
+    }
+    .contactUs button{
+      width: 100%;
+      padding: 10px;
+      background: #408edc;
+      border: none;
+      color: white;
+      font-size: larger;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .contactUs input{
+      width: 90%;
+      padding: 8px;
+      color: black;
+      margin-bottom: 15px;
+      border: 1px solid #313131;
+      border-radius: 4px;
+    }
+
+    
+    
+    /* ____________________________CSS Of RegisterGroup_______________________________ */
+
+
+    .register-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgb(128, 130, 131); ;
+  background-color: #fafafa;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="password"] {
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.gender-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 4px 0;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.button-group {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #4285f4;
   color: white;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+  background-color: #3367d6;
 }
