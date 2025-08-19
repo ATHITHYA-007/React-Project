@@ -47,6 +47,7 @@
 
  .Reg2 {
   background: #fafafa;
+  background: #ffffff;
   padding: 20px;
   width: 400px;
   margin: 50px auto;
@@ -117,10 +118,16 @@
     .job-form {
       max-width: 500px;
       margin: auto;
+
       background: #fafafa;
       padding: 20px;
       border-radius: 8px;
       box-shadow: 0 4px 12px rgb(128, 130, 131);
+
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
     .job-form h2 {
