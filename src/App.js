@@ -8,6 +8,7 @@ import Layout from "./Layout";
 import JobApplicationForm from './JobApplication';
 import ContactUs from './ContactUs';
 import RegisterGroup from './RegisterGroup';
+import RegisterTable from './RegisterTable';
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
           <Route path="JobApplicationForm" element={<JobApplicationForm />}/>
           <Route path="ContactUs" element={<ContactUs />}/>
           <Route path="RegisterGroup" element={<RegisterGroup />}/>
+          <Route path="RegisterTable" element={<RegisterTable />}/>
         </Route>
       </Routes>
     </BrowserRouter>

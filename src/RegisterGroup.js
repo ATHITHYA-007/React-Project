@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import axios from 'axios';
 
 const RegisterGroup = () => {
   const [fullName, setFullName] = useState("");
@@ -9,18 +10,25 @@ const RegisterGroup = () => {
   const [password, setPassword] = useState("");
 
   function onSubmit(e) {
-    // e.preventDefault(); // Prevents page reload
-    console.log("Thank You");
-    console.log("Full Name:", fullName);
-    console.log("Email:", email);
-    console.log("Phone:", phone);
-    console.log("DateofBirth:", dateofBirth);
-    console.log("Gender:", gender);
-    console.log("Password:", password);
-  }
+    console.log("Button Clicked")
+    axios.post('http://localhost:8080/findData', {
+        fullname: fullName,
+        email:email,
+        phone:phone,
+        dateOfBirth:dateofBirth,
+        gender:gender,
+        password:password
+      })
+      .then(function (response) {
+        console.log(response);
+      })
+      .catch(function (error) {
+        console.log(error);
+      })
+   }
   return (
     <div className="register-container">
-    <form className="register-form" onSubmit={onSubmit}>
+    <form className="register-form" >
 
     {/*----------HEADER TAG-------- */}
     <h2 className="form-heading">Register</h2> 
@@ -43,6 +51,7 @@ const RegisterGroup = () => {
       value={email}
       onChange={(e) => setEmail(e.target.value)} 
       id="email"  placeholder="Enter your email" required />
+      <label> {email}</label>
     </div>
 
 
@@ -53,6 +62,7 @@ const RegisterGroup = () => {
         value={phone}
         onChange={(e) => setPhone(e.target.value)} 
         id="phone" placeholder="Enter your phone number"  required />
+        <label> {phone}</label>
     </div>
 
 
@@ -64,6 +74,7 @@ const RegisterGroup = () => {
       value={dateofBirth}
       onChange={(e) => setDateofBirth(e.target.value)}
       id="dob" required />
+      <label>{dateofBirth}</label>
     </div>
 
 
@@ -75,6 +86,7 @@ const RegisterGroup = () => {
           <input type="radio"   
           value="Male"
           onChange={(e) => setGender(e.target.value)}
+          checked = {gender == "Male"? true: false }
           id="male" name="gender" required />
           <label htmlFor="male">Male</label>
       </div>
@@ -115,17 +127,9 @@ const RegisterGroup = () => {
       <button type="submit">Register</button>
     </div>
   </form>
+  <button onClick={onSubmit}></button>
 </div>
   ) 
 }
-
-
-
-
-
-
-
-
-
 
 export default RegisterGroup

@@ -205,8 +205,7 @@
     
     /* ____________________________CSS Of RegisterGroup_______________________________ */
 
-
-    .register-container {
+.register-container {
   max-width: 400px;
   margin: auto;
   padding: 30px;
@@ -273,3 +272,4 @@ button {
 button:hover {
   background-color: #3367d6;
 }
+

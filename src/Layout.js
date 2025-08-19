@@ -19,6 +19,8 @@ function Layout({ changeState, test }) {
         <Link to="/ContactUs">ContactUs</Link>
         <br></br>
         <Link to="/RegisterGroup">RegisterGroup</Link>
+        <br></br>
+        <Link to="/RegisterTable">RegisterTable</Link>
       </div>
       <div>
       <Outlet />

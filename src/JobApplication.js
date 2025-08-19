@@ -5,7 +5,7 @@ const JobApplicationForm = () => {
 
     return (
     <div>
-    <form class="job-form" action="/submit-job-application" method="POST" >
+    <form className="job-form" action="/submit-job-application" method="POST" >
     
         <h2>Job Application Form</h2>
 
